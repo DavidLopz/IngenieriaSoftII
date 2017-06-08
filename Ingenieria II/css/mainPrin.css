@@ -1,0 +1,23 @@
+@import url(main.css);
+
+.usuario
+{
+	width: 50%;
+	height: 50%;
+	border-radius: 10px;
+	background: #ffffff;
+	border-style: solid;
+    border-width: 5px;
+    border-color: #31ff00;
+}
+
+.usuario img
+{
+	padding: 10%;
+	box-sizing: border-box;
+}
+
+html 
+{
+	overflow: auto;
+}

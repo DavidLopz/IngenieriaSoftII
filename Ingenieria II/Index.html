@@ -1,0 +1,96 @@
+<!doctype html> 
+<html lang="en">
+	
+		<head> 
+		    <meta charset="UTF-8" />
+		    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		    <link rel="stylesheet" type="text/css" href="css/main.css">
+		    <link rel="stylesheet" href="css/fontello.css">
+		    <title>TuEstancia</title>
+		</head>
+		<body>
+		<div class="contenedor">
+			<header>
+				<div class="cabecera">
+					<div class="titulo">
+						<h1>TuEstancia</h1>
+					</div>
+					<div class="opciones">
+						<a href="#flotante">Ingresar</a>
+						<a href="#flotante2">Registrarse</a>
+						<a href="">?</a>
+					</div>
+				</div>
+			</header>
+			<main>
+				<img src="images/TuEstancia2.png">
+				<center>
+					<form class="searchform">
+						<input class="searchfield" type="text" value="Buscar..." onfocus="if (this.value == 'Buscar...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Buscar...';}">
+						<input class="searchbutton" type="button" value="Ir">
+						
+					</form>
+				</center>
+			</main>
+			<footer>
+				<div class="menu">
+					<div class="columna"><a href="">acerca de</a></div>
+					<div class="columna"><a href="">contacto</a></div>
+					<div class="columna"><a href="">politicas de privacidad</a></div>
+					<div class="columna">
+						<a class="icon-facebook-squared" href="http://Facebook.com"></a>
+						<a class="icon-twitter-squared" href="http://twitter.com"></a>
+						<a class="icon-gmail" href="http://gmail.com"></a>
+					</div>
+				</div>
+			</footer>
+			</div>
+
+						<div class="modal-wrapper" id="flotante">
+		    		<div class="flotante-contenedor">
+		    			<div class="log">
+			       				<form action="#" method="post">
+			       						Correo electronico:<br>
+			       						<input type="email" name="usuario" class="cajas" required><br>
+			       						Contraseña:<br>
+			       						<input type="password" name="usuario" class="cajas" required><br>
+			       						<center><br><input type="submit" value="iniciar"></center>
+			       						<p>¿Aun no tienes cuenta? <a href="#flotante2">Registrate ahora</a> y disfruta de nuestros beneficos</p>
+			       				</form>
+		       			</div>
+		       			<a class="popup-cerrar" href="#">X</a>
+		    		</div>
+			</div>
+
+
+			<div class="modal-wrapper" id="flotante2">
+		    	<div class="flotante2-contenedor">
+		    		<div class="log">
+			       		<form action="#" method="post">
+		                	Nombre<br>
+		                	<input type="text" name="nombre" class="cajas" required><br>
+		                	Apellido<br>
+		                	<input type="text" name="Apellido" class="cajas" required><br>
+		               		Correo electronico<br>
+		                	<input type="text" name="Correo" class="cajas" required><br>
+		                	Contraseña<br>
+		                	<input type="password" name="Correo" class="cajas" required><br>
+		                	Repita la contraseña<br>
+		                	<input type="password" name="Correo" class="cajas" required><br>
+		                	Telefono<br>
+		                	<input type="text " name="telefono" class="cajas" required><br>
+		                	Sexo<br>
+		                	<input type="radio" value="Hombre" name="sexo" required>Hombre<br>
+		  					<input type="radio" value="Mujer" name="sexo" required>Mujer<br><br>
+		                	Nombre de usuario<br>
+		                	<input type="text" name="userNombre" class="cajas" required><br><br>
+		                	<input type="submit" value="registrar" ><br><br>
+		                	<a href= "">Más información </a>
+		            	</form>
+		       		</div>
+		       		<a class="popup-cerrar" href="#">X</a>
+		    	</div>
+			</div>
+	</body>
+	
+</html>
