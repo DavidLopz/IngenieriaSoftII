@@ -1,0 +1,39 @@
+
+<div class="modal-wrapper" id="flotante2">
+   <div class="flotante2-contenedor">
+      <div class="log"-->
+         <%= form_tag({:controller => "formularios", :action => "registro"}, :method => "post") do %>
+            <%= label_tag "nombre", "Nombre" %>
+            <br />
+            <%= text_field_tag "nombre", "", :required => "required" %>
+            <br />
+            <%= label_tag "apellido", "Apellido" %>
+            <br />
+            <%= text_field_tag "apellido", "", :required => "required" %>
+            <br />
+            <%= label_tag "email", "Email" %>
+            <br />
+            <%= email_field_tag "email", "", :required => "required" %>
+            <br />
+            <%= label_tag "password", "Password" %>
+            <br />
+            <%= password_field_tag "password", "", :required => "required" %>
+            <br />
+            <%= label_tag "telefono", "Telefono" %>
+            <br />
+            <%= text_field_tag "telefono", "", :required => "required" %>
+            <br />
+            <%= submit_tag "Enviar comentario" %>
+            <% end %>
+            <% if @comentario %>
+               <p> <strong><%= @comentario[:nombre] %></strong>, Gracias por publicar tu comentario </p>
+            <div class="comentario">
+               <%= simple_format (@comentario[:consulta]) %>
+            </div>
+         <% end %>
+         </div>
+                     <div class="popup-cerrar"><%= link_to "X",root_path %>
+               </div>
+      </div>
+   </div>
+</div>

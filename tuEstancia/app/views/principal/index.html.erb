@@ -1,0 +1,54 @@
+<div class="contenedor">
+			<header>
+				<div class="cabecera">
+					<div class="titulo">
+						<h1>TuEstancia</h1>
+					</div>
+					<div class="opciones">
+						<a href="#flotante">Ingresar</a>
+						<%= link_to "Registrarse",formularios_registro_path %>
+						<a href="#flotante2">Registrarse</a>
+						<a href="">?</a>
+					</div>
+				</div>
+			</header>
+			<main>
+				<img src="images/TuEstancia2.png">
+				<center>
+					<form class="searchform">
+						<input class="searchfield" type="text" value="Buscar..." onfocus="if (this.value == 'Buscar...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Buscar...';}">
+						<input class="searchbutton" type="button" value="Ir">
+						
+					</form>
+				</center>
+			</main>
+			<footer>
+				<div class="menu">
+					<div class="columna"><a href="">acerca de</a></div>
+					<div class="columna"><a href="">contacto</a></div>
+					<div class="columna"><a href="">politicas de privacidad</a></div>
+					<div class="columna">
+						<a class="icon-facebook-squared" href="http://Facebook.com"></a>
+						<a class="icon-twitter-squared" href="http://twitter.com"></a>
+						<a class="icon-gmail" href="http://gmail.com"></a>
+					</div>
+				</div>
+			</footer>
+			</div>
+
+						<div class="modal-wrapper" id="flotante">
+		    		<div class="flotante-contenedor">
+		    			<div class="log">
+			       				<%= form_tag({:controller => "formularios", :action => "registro"}, :method => "post") do %>
+			       					<%= label_tag "email", "Email" %>
+						            <br />
+						            <%= email_field_tag "email", "", :required => "required" %>
+						            <br />
+						            <%= label_tag "password", "Password" %>
+		       						<center><br><input type="submit" value="iniciar"></center>
+		       						<p>¿Aun no tienes cuenta? <a href="#flotante2">Registrate ahora</a> y disfruta de nuestros beneficos</p>
+			       				<% end %>
+		       			</div>
+		       			<a class="popup-cerrar" href="#">X</a>
+		    		</div>
+			</div>
